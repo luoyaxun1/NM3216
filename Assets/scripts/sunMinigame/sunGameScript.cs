@@ -28,7 +28,7 @@ public class sunGameScript : MonoBehaviour {
 	}
 	void Update(){
 		if (sunDropsCollected > 4) {
-			timer.text = Time.;
+			//timer.text =;
 		}
 	}
 }
