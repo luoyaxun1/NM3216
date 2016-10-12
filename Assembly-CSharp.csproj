@@ -45,8 +45,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\sheepController.cs" />
-     <Compile Include="Assets\sheep_controller.cs" />
+     <Compile Include="Assets\scripts\CameraController.cs" />
+     <Compile Include="Assets\scripts\cave.cs" />
+     <Compile Include="Assets\scripts\dontDestory.cs" />
+     <Compile Include="Assets\scripts\movementController.cs" />
+     <Compile Include="Assets\scripts\patchManager.cs" />
+     <Compile Include="Assets\scripts\playerControler.cs" />
+     <Compile Include="Assets\scripts\sheep_controller.cs" />
+     <Compile Include="Assets\scripts\sunMinigame\CompletePlayerController.cs" />
+     <Compile Include="Assets\scripts\sunMinigame\squirelTree.cs" />
+     <Compile Include="Assets\scripts\sunMinigame\sunGameScript.cs" />
+     <Compile Include="Assets\scripts\wizard.cs" />
+     <None Include="Assets\scripts\text\wizardtext.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

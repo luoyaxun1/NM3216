@@ -1,8 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\sheep_controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\playerControler.cs">
     <Files>
-      <File FileName="Assets\sheep_controller.cs" Line="15" Column="12" />
+      <File FileName="Assets\scripts\wizard.cs" Line="21" Column="3" />
+      <File FileName="Assets\scripts\CameraController.cs" Line="23" Column="44" />
+      <File FileName="Assets\scripts\playerControler.cs" Line="18" Column="17" />
+      <File FileName="Assets\scripts\patchManager.cs" Line="16" Column="2" />
+      <File FileName="Assets\scripts\sunMinigame\squirelTree.cs" Line="27" Column="17" />
+      <File FileName="Assets\scripts\sunMinigame\sunGameScript.cs" Line="31" Column="22" />
+      <File FileName="Assets\scripts\sunMinigame\CompletePlayerController.cs" Line="28" Column="57" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

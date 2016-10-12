@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - wizard
   layers:
   - Default
   - TransparentFX
@@ -43,6 +44,12 @@ TagManager:
     locked: 0
   - name: BackGround
     uniqueID: 634614841
+    locked: 0
+  - name: npc
+    uniqueID: 3012538399
+    locked: 0
+  - name: object
+    uniqueID: 1123504833
     locked: 0
   - name: Player
     uniqueID: 2731921933
