@@ -6,17 +6,19 @@ public class wizard : MonoBehaviour {
 	private int interactionCount;
 	public Text interaction;
 	private string[] dialogs;
+	public TextAsset dialog;
+
 	// Use this for initialization
 	void Start () {
-		interactionCount = 0;
-		//dialogs = System.IO.File.ReadAllLines ("text/wizardtext.txt");
-		dialogs = new string[1]{"\"Saving\" will help you progress the game!"};
+		dialogs = dialog.text.Split ('\n');
+		interaction.text = "";
+
 	}
 		
 
 	void updateInteraction(){
 		int i = interactionCount % dialogs.Length;
-		interaction.text = "Wizard: " + dialogs[1];
+		interaction.text = "Wizard: " + dialogs[i];
 		interactionCount++;
 	}
 

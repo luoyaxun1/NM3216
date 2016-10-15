@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SunGameScript: MonoBehaviour {
-
-	private static int squirelsKilled;
-	private static int sunDropsCollected;
-	private static Light lighting;
-	public static float increment;
+	public static GameManager gameManager;
+	private Light lighting;
 	public Text timer;
 	public Rigidbody2D player;
 	public SquirelTreeScript[] trees;
@@ -16,23 +14,21 @@ public class SunGameScript: MonoBehaviour {
 	//public static Time timer;
 	// Use this for initialization
 	void Start () {
-		squirelsKilled = 0;
-		sunDropsCollected = 0;
 		lighting = this.GetComponentInChildren<Light> ();
 	}
 
 	
 	// Update is called once per frame
-	public static void addKill(){
-		squirelsKilled++;
+	public void addKill(){
+		GameManager.AddKill ();
 	}
-	public static void addLight(){
-		sunDropsCollected++;
+	public void addLight(){
+		GameManager.AddSupply (0, 0, 1, 0);
 		lighting.intensity = lighting.intensity + value * value *value;
 	}
 	void Update(){
-		if (sunDropsCollected > 4) {
-			//timer.text =;
+		if (GameManager.GetSupply()[2] > 4) {
+			GameManager.loadHome ();
 		}
 		if (Input.GetKey("space")) {
 			for (int i = 0; i < trees.Length; i++) {

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SquirelTreeScript : MonoBehaviour {
 
+	public SunGameScript sungameObject;
 	public bool isStree;
 	public bool isCut;
 	private SpriteRenderer sr;
@@ -61,9 +62,9 @@ public class SquirelTreeScript : MonoBehaviour {
 				isCut = true;
 
 				if (isStree) {
-					SunGameScript.addKill ();
+					sungameObject.addKill ();
 				}
-				SunGameScript.addLight ();
+				sungameObject.addLight ();
 				bc.isTrigger = true;
 			}
 

@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013110208444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.3961134, y: 2.3132489, z: 10}
   m_LocalScale: {x: 1.8440562, y: 1.7982625, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0776c9e9950bb5e469b113ae4089d437, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sungameObject: {fileID: 0}
   isStree: 0
   isCut: 0
   healthyTree: {fileID: 21300000, guid: c396c3341b0d9c54b805febeb0694291, type: 3}

@@ -103,7 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ddecfa35422d0f4a9371fc701624c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  gameManager: {fileID: 0}
+  speed: 0.3
   trust: 100
   fertilizer: {fileID: 0}
   water: {fileID: 0}

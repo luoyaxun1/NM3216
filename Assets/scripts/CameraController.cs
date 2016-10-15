@@ -18,8 +18,4 @@ public class CameraController : MonoBehaviour {
 		//make self's position the same as player's position + offset
 		transform.position = player.transform.position + offset;
 	}
-
-	void Awake(){
-		DontDestroyOnLoad (transform.gameObject);
-	}
 }

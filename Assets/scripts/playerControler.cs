@@ -3,7 +3,10 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class playerControler : MonoBehaviour {
+	public GameManager gameManager;
+	//private playerControler instance = null;
 	private Rigidbody2D rb2d;
+	private SpriteRenderer sr;
 	//motion variables
 	public float speed;
 	public float trust;
@@ -15,14 +18,16 @@ public class playerControler : MonoBehaviour {
 
 	private int[] supply;//fertiliser, water, sunlight, carrots
 	// Use this for initialization
-	void Start () {
+	void Start() {
 		//DontDestroyOnLoad (transform.gameObject);
 		rb2d = this.GetComponent<Rigidbody2D> ();
 		//set supply starting values
-		supply = new int[4] {0, 0, 0, 10};
-
+		supply = GameManager.GetSupply();
+		print (supply[2]);
+		sr = this.GetComponent<SpriteRenderer> ();
 		//init supply variables
 		UpdateSupplies();
+
 	}
 
 	// Update is called once per frame
@@ -31,14 +36,6 @@ public class playerControler : MonoBehaviour {
 		float horizontal = Input.GetAxis ("Horizontal");
 
 		rb2d.MovePosition (rb2d.position + new Vector2(horizontal * speed, (float)0.0));
-		//print(vertical);
-		if (vertical > 0.0) {
-			rb2d.AddForce (Vector2.up * trust);
-		}
-	}
-
-	void Awake(){
-		DontDestroyOnLoad (transform.gameObject);
 	}
 
 	void UpdateSupplies(){

@@ -6,6 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene1.unity
+    path: Assets/text.unity
   - enabled: 1
-    path: Assets/Scene2.unity
+    path: Assets/river.unity
+  - enabled: 1
+    path: Assets/settings.unity
+  - enabled: 1
+    path: Assets/market.unity
+  - enabled: 1
+    path: Assets/home.unity
+  - enabled: 1
+    path: Assets/cave.unity
+  - enabled: 1
+    path: Assets/sunMinigame.unity
