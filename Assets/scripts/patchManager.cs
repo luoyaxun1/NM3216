@@ -11,7 +11,6 @@ public class patchManager : MonoBehaviour {
 		sr = this.GetComponent<SpriteRenderer> ();
 		seedStage = 0;
 	}
-	
 	// Update is called once per frame
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.gameObject.CompareTag ("Player")) {
