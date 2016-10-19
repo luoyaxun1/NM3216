@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010840087426}
   - 114: {fileID: 114000012083963958}
-  - 114: {fileID: 114000012453355598}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -52,16 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bfeacbe4e3ea13479c7c309df1d0cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000012453355598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011260666282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a62385da4b9d634aaa9348a2173761a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  cameraDisplacement: 0
+  player1: {fileID: 1000011565399474, guid: ba418abd196879a4cbc31a058e638263, type: 2}
+  sunDrop: {fileID: 1000011942475538, guid: 050cd2db9d5503544a886be286ac288a, type: 2}
+  canvas: {fileID: 223000011149772286, guid: 8bb03cbef2b51b44790d8a46bee0db3c, type: 2}

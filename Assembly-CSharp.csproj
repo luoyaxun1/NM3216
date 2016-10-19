@@ -57,6 +57,7 @@
      <Compile Include="Assets\scripts\screemMoving\instructions.cs" />
      <Compile Include="Assets\scripts\sheep_controller.cs" />
      <Compile Include="Assets\scripts\sunMinigame\SquirelTreeScript.cs" />
+     <Compile Include="Assets\scripts\sunMinigame\SunDrop.cs" />
      <Compile Include="Assets\scripts\sunMinigame\SunGameScript.cs" />
      <Compile Include="Assets\scripts\sunMinigame\sunPlayerController.cs" />
      <Compile Include="Assets\scripts\wizard.cs" />

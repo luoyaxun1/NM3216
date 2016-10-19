@@ -4,7 +4,16 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class SunGameScript: MonoBehaviour {
-	public static GameManager gameManager;
+	public GameManager gameManager;
+	private static GameObject Player1;
+
+	void Start(){
+		Player1 = gameManager.getPlayer ();
+		Instantiate (Player1, Vector3.zero, Quaternion.identity);
+	}
+}
+/*
+public static GameManager gameManager;
 	private Light lighting;
 	public Text timer;
 	public Rigidbody2D player;
@@ -38,4 +47,4 @@ public class SunGameScript: MonoBehaviour {
 
 		}
 	}
-}
+*/
