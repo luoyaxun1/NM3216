@@ -20,7 +20,7 @@ public class SquirelTreeScript : MonoBehaviour {
 
 	private Sprite[] sprites;
 
-	private static GameObject Player1;
+	//private static GameObject Player1;
 
 	//to check if the player can cut the tree
 	private bool inRange = false;
@@ -37,10 +37,10 @@ public class SquirelTreeScript : MonoBehaviour {
 		this.bc = this.GetComponent<BoxCollider2D> ();
 		this.hitCounter = 0;
 
-		Debug.Log (isStree);
+		//Debug.Log (isStree);
 		//set differences between trees
 		initTree();
-		Player1 = gameManager.getPlayer ();//get the player to refer to
+		//Player1 = gameManager.getPlayer ();//get the player to refer to
 	}
 
 	void initTree(){
@@ -72,6 +72,8 @@ public class SquirelTreeScript : MonoBehaviour {
 	}
 
 	void Update(){
+
+		//this function detects if a player trys to cut a tree
 		if (this.inRange && Input.GetKeyDown (KeyCode.Space) && !this.isCut) {
 			//Debug.Log ("pressed space");
 			//1. update cut count
@@ -88,37 +90,5 @@ public class SquirelTreeScript : MonoBehaviour {
 			}
 		}
 	}
-	
-	
-	/*void CutDownAnimation(Color c){
-		Vector3 r = new Vector3 ((float)0.0, (float)0.0, (float)45);
-		transform.Rotate (r);
-		sr.color = c;
-	}*/
 
-	/*public void Hit(Rigidbody2D other){
-		Collider2D otherCollider= other.gameObject.GetComponent<Collider2D> ();
-		if (rb2d.IsTouching(otherCollider) && !isCut) {
-			//print ("is hitting");
-			hitCounter++;
-			if (hitCounter == 1) {
-				sr.sprite = cutTree1;
-			} else if (hitCounter == 2) {
-				sr.sprite = cutTree2;
-			} else if (hitCounter == 3) {
-				sr.sprite = cutTree3;
-				isCut = true;
-
-				if (isStree) {
-					sungameObject.addKill ();
-				}
-				sungameObject.addLight ();
-				bc.isTrigger = true;
-			}
-
-
-		}
-	}*/
-	public void Hit(Rigidbody2D other){
-	}
 }
