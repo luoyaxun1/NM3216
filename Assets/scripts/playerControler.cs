@@ -9,7 +9,7 @@ public class playerControler : MonoBehaviour {
 	private Rigidbody2D rb2d;
 	private SpriteRenderer sr;
 	private BoxCollider2D bc2d;
-	private BoxCollider2D groundBc2d;
+	//private BoxCollider2D groundBc2d;
 
 	//motion variables
 	public float speed;
@@ -20,15 +20,17 @@ public class playerControler : MonoBehaviour {
 	public Sprite[] playerJumpLeft;
 	private Sprite[] currentSprite;
 	private int aniCounter;
-	private GameObject ground;
+	//private GameObject ground;
+
+	private int groundedMeter = 0;//+1 -> grounded
 	// Use this for initialization
 	void Start() {
 		//DontDestroyOnLoad (transform.gameObject);
 		rb2d = this.GetComponent<Rigidbody2D> ();
 		sr = this.GetComponent<SpriteRenderer> ();
 		bc2d = this.GetComponent<BoxCollider2D> ();
-		ground = GameObject.FindWithTag ("ground");
-		groundBc2d = ground.GetComponent<BoxCollider2D> ();
+		//ground = GameObject.FindWithTag ("ground");
+		//groundBc2d = ground.GetComponent<BoxCollider2D> ();
 		aniCounter = 0;
 		currentSprite = playerWalkRight;
 	}
@@ -39,9 +41,9 @@ public class playerControler : MonoBehaviour {
 	void FixedUpdate () {
 		float vertical = Input.GetAxis ("Vertical") * Time.deltaTime * 10;
 		float horizontal = Input.GetAxis ("Horizontal") * Time.deltaTime * 10;
-		//Debug.Log (Time.deltaTime);
+		//Debug.Log (isGrounded(bc2d));
 
-		if (Input.GetKey (KeyCode.UpArrow) && bc2d.IsTouching (groundBc2d)) {
+		if (Input.GetKey (KeyCode.UpArrow) && isGrounded(bc2d)) {
 			//can jump
 			//Debug.Log ("player jump");
 			if (horizontal >= 0) {
@@ -50,13 +52,15 @@ public class playerControler : MonoBehaviour {
 				currentSprite = playerJumpLeft;
 			}
 			rb2d.AddForce (new Vector3 (upForce * horizontal, upForce * vertical, 0.0f));
-		} else if(bc2d.IsTouching(groundBc2d)) {
+		} else if(isGrounded(bc2d)) {
 			if (horizontal >= 0) {
 				currentSprite = playerWalkRight;
 			} else {
 				currentSprite = playerWalkLeft;
 			}
+			rb2d.velocity = Vector3.zero;//lose all forces when standing
 			rb2d.MovePosition (rb2d.position + new Vector2(horizontal * speed, 0.0f));
+
 		}
 		anim (currentSprite);
 	}
@@ -66,5 +70,22 @@ public class playerControler : MonoBehaviour {
 		aniCounter++;
 		Sprite temp = currentSprite [(aniCounter/10) % currentSprite.Length];
 		this.sr.sprite = temp;
+	}
+
+	bool isGrounded(Collider2D collider){
+		//Debug.Log (this.groundedMeter);
+		return (this.groundedMeter > 0);
+	}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject.tag == "ground") {
+			this.groundedMeter++;
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D coll){
+		if (coll.gameObject.tag == "ground") {
+			this.groundedMeter--;
+		}
 	}
 }

@@ -104,11 +104,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.3
-  upForce: 500
+  upForce: 300
   playerWalkLeft:
-  - {fileID: 21300000, guid: e7ee468fc8e506d43836dd92c1752757, type: 3}
-  - {fileID: 21300002, guid: e7ee468fc8e506d43836dd92c1752757, type: 3}
-  - {fileID: 21300004, guid: e7ee468fc8e506d43836dd92c1752757, type: 3}
+  - {fileID: 21300000, guid: a27d0235888fd5042be3dfef04ad2b49, type: 3}
+  - {fileID: 21300002, guid: a27d0235888fd5042be3dfef04ad2b49, type: 3}
+  - {fileID: 21300004, guid: a27d0235888fd5042be3dfef04ad2b49, type: 3}
+  - {fileID: 21300006, guid: a27d0235888fd5042be3dfef04ad2b49, type: 3}
   playerWalkRight:
   - {fileID: 21300000, guid: 654a5ceacd797774889e0cd878f6b8f7, type: 3}
   - {fileID: 21300002, guid: 654a5ceacd797774889e0cd878f6b8f7, type: 3}
@@ -119,10 +120,10 @@ MonoBehaviour:
   - {fileID: 21300004, guid: c9e6664062050434c91828a1961414d2, type: 3}
   - {fileID: 21300006, guid: c9e6664062050434c91828a1961414d2, type: 3}
   playerJumpLeft:
-  - {fileID: 21300000, guid: c9e6664062050434c91828a1961414d2, type: 3}
-  - {fileID: 21300002, guid: c9e6664062050434c91828a1961414d2, type: 3}
-  - {fileID: 21300004, guid: c9e6664062050434c91828a1961414d2, type: 3}
-  - {fileID: 21300006, guid: c9e6664062050434c91828a1961414d2, type: 3}
+  - {fileID: 21300000, guid: e7ee468fc8e506d43836dd92c1752757, type: 3}
+  - {fileID: 21300002, guid: e7ee468fc8e506d43836dd92c1752757, type: 3}
+  - {fileID: 21300004, guid: e7ee468fc8e506d43836dd92c1752757, type: 3}
+  - {fileID: 21300006, guid: e7ee468fc8e506d43836dd92c1752757, type: 3}
 --- !u!212 &212000011001652930
 SpriteRenderer:
   m_ObjectHideFlags: 1

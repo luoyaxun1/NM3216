@@ -4,14 +4,14 @@ using System.Collections;
 public class CameraController : MonoBehaviour {
 
 	public GameManager gameManager;
-	private GameObject player;
+	public GameObject player;
 	public float cameraDisplacement;
 
 	private Vector3 offset;
 	// Use this for initialization
 	void Start () {
 		//initialise offset from player position
-		this.player = gameManager.getPlayer();
+		//this.player = gameManager.getPlayer();
 		offset = new Vector3((float)0.0 , -player.transform.position.y, (float)-10.0);
 	}
 	

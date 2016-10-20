@@ -22,22 +22,23 @@ public class GameManager : MonoBehaviour {
 		//Awake is called when the script instance is being loaded
 		if (instance == null) {
 			instance = this;
-
 		} else if (instance != this) {
 			Destroy (gameObject);
 		}
 		DontDestroyOnLoad (gameObject);
 		//init values
-		if(player1 == null){
-			Instantiate (player1);
-			Debug.Log ("player1 null");
+		if (GameObject.FindWithTag ("Player") == null) {
+			this.player1 = Instantiate (player1);
+			player1.transform.position = new Vector3 (0.0f, 0.0f, 0.0f);//player load position
+			Debug.Log ("instantiateplayer");
+		} else {
+			this.player1 = GameObject.FindWithTag ("Player");
 		}
 		if (canvas == null) {
 			Instantiate (canvas);
 			Debug.Log ("instantiate canvas");
 		}
 		//player settings
-		player1.transform.position = new Vector3 (0.0f, 0.0f, 0.0f);//player load position
 		currLevel = 1;//hard code to 1
 		Rigidbody2D rb2d = player1.GetComponent<Rigidbody2D>();
 		rb2d.gravityScale = 1.0f;
@@ -96,6 +97,7 @@ public class GameManager : MonoBehaviour {
 
 	//player accessors
 	public GameObject getPlayer(){
+		
 		return player1;
 	}
 
