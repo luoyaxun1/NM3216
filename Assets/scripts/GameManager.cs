@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject player1;
 	public GameObject sunDrop;
-	public Canvas canvas;
+	public GameObject canvas;
 
 	private static int currLevel;
 	
@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour {
 		if (canvas == null) {
 			Instantiate (canvas);
 			Debug.Log ("instantiate canvas");
+		} else {
+			//set canvas to itself
 		}
 		//player settings
 		currLevel = 1;//hard code to 1

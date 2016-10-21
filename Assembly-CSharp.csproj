@@ -61,6 +61,7 @@
      <Compile Include="Assets\scripts\sunMinigame\SunDrop.cs" />
      <Compile Include="Assets\scripts\sunMinigame\SunGameScript.cs" />
      <Compile Include="Assets\scripts\sunMinigame\sunPlayerController.cs" />
+     <Compile Include="Assets\scripts\tutorial.cs" />
      <Compile Include="Assets\scripts\wizard.cs" />
      <None Include="Assets\scripts\home\plantText.txt" />
      <None Include="Assets\scripts\text\wizardtext.txt" />

@@ -19,6 +19,6 @@ public class CameraController : MonoBehaviour {
 	void LateUpdate () {
 		//make self's position the same as player's position + offset
 		transform.position = this.player.transform.position + offset;
-		Debug.Log ("camera update: " + this.player.transform.position);
+		//Debug.Log ("camera update: " + this.player.transform.position);
 	}
 }
