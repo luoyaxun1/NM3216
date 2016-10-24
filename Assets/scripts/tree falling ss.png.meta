@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: c396c3341b0d9c54b805febeb0694291
-timeCreated: 1476512712
+guid: 6f4565f59b06b2747ae756428804c6d2
+timeCreated: 1477282660
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Tree_cutting_0
-    21300002: Tree_cutting_1
-    21300004: Tree_cutting_2
-    21300006: Tree_cutting_3
+    21300000: tree falling ss_0
+    21300002: tree falling ss_1
+    21300004: tree falling ss_2
+    21300006: tree falling ss_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -57,54 +57,54 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tree_cutting_0
+      name: tree falling ss_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1
-        width: 73
-        height: 82
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Tree_cutting_1
+      name: tree falling ss_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 2
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 10, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Tree_cutting_2
-      rect:
-        serializedVersion: 2
-        x: 179
+        x: 100
         y: 0
-        width: 75
-        height: 83
-      alignment: 9
-      pivot: {x: 0.51528883, y: 0.4898076}
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Tree_cutting_3
+      name: tree falling ss_2
       rect:
         serializedVersion: 2
-        x: 254
+        x: 200
         y: 0
-        width: 46
-        height: 83
+        width: 100
+        height: 100
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tree falling ss_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

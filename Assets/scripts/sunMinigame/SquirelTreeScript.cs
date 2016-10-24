@@ -13,7 +13,7 @@ public class SquirelTreeScript : MonoBehaviour {
 	private SpriteRenderer sr;
 	private BoxCollider2D bc;
 	private int hitCounter;//how many times current tree has been hit
-	private int MAXCUT = 3;
+	private int MAXCUT = 4;
 
 	public Sprite[] treeSprite;//how tree looks when cut down
 	public Sprite[] sTreeSprite;

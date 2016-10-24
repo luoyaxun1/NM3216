@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 788671f2d6d09354a9c47ef04163bb2c
-timeCreated: 1476067969
+guid: 96a2ba1fdc85cb44f8d5c3d6687b5605
+timeCreated: 1477282631
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: trees_0
-    21300002: trees_1
+    21300000: squirrel dying ss_0
+    21300002: squirrel dying ss_1
+    21300004: squirrel dying ss_2
+    21300006: squirrel dying ss_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,26 +57,52 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trees_0
+      name: squirrel dying ss_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 79.5
-        height: 490
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: trees_1
+      name: squirrel dying ss_1
       rect:
         serializedVersion: 2
-        x: 79
+        x: 100
         y: 0
-        width: 79.5
-        height: 490
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: squirrel dying ss_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: squirrel dying ss_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -20,12 +20,20 @@ public class SunDrop : MonoBehaviour {
 
 	private IEnumerator ActivatationRoutine(){
 		yield return new WaitForSeconds (0.4f);
-		cc2d.isTrigger = true;
+		//cc2d.isTrigger = true;
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
 		if (other.CompareTag ("Player")) {
 			//Debug.Log ("sundrop sensed player");
+			GameManager.AddSunlight ();
+			this.gameObject.SetActive (false);
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "Player") {
+			Debug.Log ("player caught sundrop");
 			GameManager.AddSunlight ();
 			this.gameObject.SetActive (false);
 		}

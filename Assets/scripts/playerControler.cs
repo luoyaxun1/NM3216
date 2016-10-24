@@ -51,7 +51,12 @@ public class playerControler : MonoBehaviour {
 			} else {
 				currentSprite = playerJumpLeft;
 			}
-			rb2d.AddForce (new Vector3 (upForce * horizontal, upForce * vertical, 0.0f));
+			if (rb2d.velocity.magnitude < 5) {
+				rb2d.AddForce (new Vector3 (upForce * horizontal, upForce * vertical, 0.0f));
+			} else {
+				rb2d.AddForce (new Vector3 (0.0f, upForce * vertical, 0.0f));
+			}
+			//rb2d.MovePosition (rb2d.position + new Vector2 (horizontal * 5 * speed, 0.0f));
 		} else if(isGrounded(bc2d)) {
 			if (horizontal >= 0) {
 				currentSprite = playerWalkRight;
