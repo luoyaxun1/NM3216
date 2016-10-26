@@ -23,13 +23,13 @@ public class SunDrop : MonoBehaviour {
 		//cc2d.isTrigger = true;
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
+	/*void OnTriggerEnter2D(Collider2D other){
 		if (other.CompareTag ("Player")) {
 			//Debug.Log ("sundrop sensed player");
 			GameManager.AddSunlight ();
 			this.gameObject.SetActive (false);
 		}
-	}
+	}*/
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Player") {

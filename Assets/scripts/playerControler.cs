@@ -39,6 +39,7 @@ public class playerControler : MonoBehaviour {
 
 
 	void FixedUpdate () {
+		//PrintStatus ();
 		float vertical = Input.GetAxis ("Vertical") * Time.deltaTime * 10;
 		float horizontal = Input.GetAxis ("Horizontal") * Time.deltaTime * 10;
 		//Debug.Log (isGrounded(bc2d));
@@ -92,5 +93,10 @@ public class playerControler : MonoBehaviour {
 		if (coll.gameObject.tag == "ground") {
 			this.groundedMeter--;
 		}
+	}
+
+	void PrintStatus(){
+		Debug.Log (rb2d.velocity);
+		Debug.Log (transform.position);
 	}
 }
