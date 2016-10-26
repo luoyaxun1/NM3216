@@ -95,6 +95,10 @@ public class playerControler : MonoBehaviour {
 		}
 	}
 
+	public void ExitGround(){
+		this.groundedMeter--;
+	}
+
 	void PrintStatus(){
 		Debug.Log (rb2d.velocity);
 		Debug.Log (transform.position);

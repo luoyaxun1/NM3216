@@ -86,14 +86,14 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011282476428}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -1.41, y: 0}
+  m_Offset: {x: -3.33, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.2, y: 3.62}
+  m_Size: {x: 0.24, y: 3.62}
 --- !u!81 &81000012298305090
 AudioListener:
   m_ObjectHideFlags: 1

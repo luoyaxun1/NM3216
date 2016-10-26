@@ -103,6 +103,10 @@ public class GameManager : MonoBehaviour {
 		return player1;
 	}
 
+	public void PlayerExitGround(){
+		
+	}
+
 	//level accessor
 	public static int GetLevel(){
 		return currLevel;
