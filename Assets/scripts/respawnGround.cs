@@ -16,7 +16,8 @@ public class respawnGround : MonoBehaviour {
 		if (coll.gameObject.tag == "Player") {
 			Debug.Log ("player to respawn");
 			coll.gameObject.transform.position = spawnPoint.transform.position;
-			cameraObject.transform.position = coll.gameObject.transform.position;
+			cameraObject.transform.position = new Vector3( coll.gameObject.transform.position.x, 
+				coll.gameObject.transform.position.y, cameraObject.transform.position.z);
 		}
 	}
 }
