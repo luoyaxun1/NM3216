@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour {
 		//player settings
 		currLevel = 1;//hard code to 1
 		Rigidbody2D rb2d = player1.GetComponent<Rigidbody2D>();
-		rb2d.gravityScale = 1.0f;
+		//rb2d.gravityScale = 1.0f;
 	}
 
 

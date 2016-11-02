@@ -43,8 +43,7 @@ public class playerControler : MonoBehaviour {
 		float vertical = Input.GetAxis ("Vertical") * Time.deltaTime * 10;
 		float horizontal = Input.GetAxis ("Horizontal") * Time.deltaTime * 10;
 		//Debug.Log (isGrounded(bc2d));
-
-		if (Input.GetKey (KeyCode.UpArrow) && isGrounded(bc2d)) {
+		if (Input.GetKey (KeyCode.UpArrow) && isGrounded (bc2d)) {
 			//can jump
 			//Debug.Log ("player jump");
 			if (horizontal >= 0) {
@@ -58,15 +57,17 @@ public class playerControler : MonoBehaviour {
 				rb2d.AddForce (new Vector3 (0.0f, upForce * vertical, 0.0f));
 			}
 			//rb2d.MovePosition (rb2d.position + new Vector2 (horizontal * 5 * speed, 0.0f));
-		} else if(isGrounded(bc2d)) {
+		} else if (isGrounded (bc2d)) {
 			if (horizontal >= 0) {
 				currentSprite = playerWalkRight;
 			} else {
 				currentSprite = playerWalkLeft;
 			}
 			rb2d.velocity = Vector3.zero;//lose all forces when standing
-			rb2d.MovePosition (rb2d.position + new Vector2(horizontal * speed, 0.0f));
+			rb2d.MovePosition (rb2d.position + new Vector2 (horizontal * speed, 0.0f));
 
+		} else {
+			//not standing on ground
 		}
 		anim (currentSprite);
 	}
