@@ -137,7 +137,7 @@ Transform:
   m_GameObject: {fileID: 1000010325100976}
 <<<<<<< Updated upstream
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -72.18187, y: 0.6630841, z: 0}
+  m_LocalPosition: {x: -97.14, y: 0.63, z: 0}
   m_LocalScale: {x: 5, y: 3, z: 1}
 =======
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -289,7 +289,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.87}
   serializedVersion: 2
 <<<<<<< Updated upstream
   m_Size: {x: 5, y: 0.22}

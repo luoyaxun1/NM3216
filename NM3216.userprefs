@@ -1,14 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\waterDrop.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\seedGrowth.cs">
     <Files>
-      <File FileName="Assets\scripts\playerControler.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\GameManager.cs" Line="59" Column="29" />
-      <File FileName="Assets\scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\sunMinigame\SunDrop.cs" Line="41" Column="2" />
+      <File FileName="Assets\scripts\playerControler.cs" Line="94" Column="21" />
+      <File FileName="Assets\scripts\GameManager.cs" Line="34" Column="6" />
+      <File FileName="Assets\scripts\CameraController.cs" Line="18" Column="1" />
+      <File FileName="Assets\scripts\sunMinigame\SunDrop.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\respawnGround.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\timerRock.cs" Line="36" Column="7" />
-      <File FileName="Assets\scripts\waterDrop.cs" Line="28" Column="35" />
+      <File FileName="Assets\scripts\timerRock.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\waterDrop.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\respawnObject.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\seedGrowth.cs" Line="29" Column="22" />
+      <File FileName="Assets\sprites\screemMoving\instructions.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\movingGround.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Portal.cs" Line="11" Column="66" />
+      <File FileName="Assets\scripts\loadScene.cs" Line="6" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

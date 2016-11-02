@@ -47,7 +47,6 @@ public class patchManager : MonoBehaviour {
 			print (seedStage);
 			sr.sprite = growingPatch [seedStage];
 			b.isTrigger = true;
-			GameManager.loadSunminigame ();
 		} else if (seedStage > 0) {
 			//planted
 			b.isTrigger = true;

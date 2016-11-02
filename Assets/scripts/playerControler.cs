@@ -14,6 +14,8 @@ public class playerControler : MonoBehaviour {
 	//motion variables
 	public float speed;
 	public float upForce;
+	public float speedMax;
+	public float upMax;
 	public Sprite[] playerWalkLeft;
 	public Sprite[] playerWalkRight;
 	public Sprite[] playerJumpRight;
@@ -38,7 +40,7 @@ public class playerControler : MonoBehaviour {
 	// Update is called once per frame
 
 
-	void FixedUpdate () {
+	void FixedUpdate1 () {
 		//PrintStatus ();
 		float vertical = Input.GetAxis ("Vertical") * Time.deltaTime * 10;
 		float horizontal = Input.GetAxis ("Horizontal") * Time.deltaTime * 10;
@@ -69,10 +71,47 @@ public class playerControler : MonoBehaviour {
 		} else {
 			//not standing on ground
 		}
-		anim (currentSprite);
+		anim ();
 	}
 
-	void anim(Sprite[] sprites){
+
+	void FixedUpdate () {
+		if (Input.GetKey (KeyCode.RightArrow) && rb2d.velocity.x <speedMax ) {
+			Debug.Log ("move right");
+			rb2d.AddForce (new Vector2 (speed, 0.0f));
+		}
+
+		if (Input.GetKey (KeyCode.LeftArrow) && rb2d.velocity.x > -1 * speedMax) {
+			Debug.Log ("move left");
+			rb2d.AddForce (new Vector2 (-speed, 0.0f));
+		}
+		if (isGrounded(bc2d) && Input.GetKey (KeyCode.UpArrow) && rb2d.velocity.y < upMax) {
+			Debug.Log ("jump");
+			rb2d.AddForce (new Vector2 (0.0f, upForce));
+		}
+
+		//animate
+		if (isGrounded (bc2d)) {
+			//walk
+			if (rb2d.velocity.x >= 0) {
+				currentSprite = playerWalkRight;
+			} else {
+				currentSprite = playerWalkLeft;
+			}
+		} else {
+			//jump
+			if (rb2d.velocity.x >= 0) {
+				currentSprite = playerJumpRight;
+			} else {
+				currentSprite = playerJumpLeft;
+			}
+		}
+
+		anim ();
+	}
+		
+
+	void anim(){
 		//change sprites
 		aniCounter++;
 		Sprite temp = currentSprite [(aniCounter/10) % currentSprite.Length];

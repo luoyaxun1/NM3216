@@ -3,9 +3,10 @@ using System.Collections;
 
 public class SunDrop : MonoBehaviour {
 	public GameManager gameManager;
+	public float size;
 	private CircleCollider2D cc2d;
 	void Start(){
-		this.transform.localScale = new Vector3 (0.3f, 0.3f, 0.3f);
+		this.transform.localScale = new Vector3 (size, size, 0.3f);
 		Rigidbody2D srb2d = GetComponent<Rigidbody2D> ();
 		srb2d.gravityScale = 0.01f;
 		srb2d.isKinematic = false;
