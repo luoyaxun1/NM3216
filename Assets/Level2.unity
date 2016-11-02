@@ -235,14 +235,6 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1935398895}
-    - target: {fileID: 4000012461806268, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.031784
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012461806268, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.031785
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -408,6 +400,16 @@ Prefab:
         type: 2}
       propertyPath: m_Size.y
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000013421388704, guid: 964a1a58b8ab7a0448ef44d5cc7ffac9,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61000013421388704, guid: 964a1a58b8ab7a0448ef44d5cc7ffac9,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 964a1a58b8ab7a0448ef44d5cc7ffac9, type: 2}
@@ -714,6 +716,28 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea90918eb32d02b4db2aed9cb0bfcb2b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1908485853 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000013120407978, guid: 964a1a58b8ab7a0448ef44d5cc7ffac9,
+    type: 2}
+  m_PrefabInternal: {fileID: 980337995}
+--- !u!251 &1908485857
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1908485853}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1935398894 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011565399474, guid: ba418abd196879a4cbc31a058e638263,
