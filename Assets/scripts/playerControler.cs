@@ -71,25 +71,10 @@ public class playerControler : MonoBehaviour {
 		} else {
 			//not standing on ground
 		}
-		anim (currentSprite);
+		anim ();
 	}
 
-	void FixedUpdate2 () {
-		Vector3 currpos = this.transform.position;
-		//Vector3 vec = Vector3.zero;
-		if (Input.GetKey (KeyCode.RightArrow)) {
-			rb2d.MovePosition (currpos + new Vector3 (speed, 0.0f, 0.0f));
-		}
-		if (Input.GetKey (KeyCode.LeftArrow)) {
-			rb2d.MovePosition (currpos + new Vector3 (-speed, 0.0f, 0.0f));
-		}
 
-		if (isGrounded (bc2d) && Input.GetKeyDown (KeyCode.UpArrow)) {
-			Debug.Log ("up pressed");
-			rb2d.AddForce (new Vector3 (0.0f, upForce, 0.0f));
-		}
-
-	}
 	void FixedUpdate () {
 		if (Input.GetKey (KeyCode.RightArrow) && rb2d.velocity.x <speedMax ) {
 			Debug.Log ("move right");
@@ -104,10 +89,29 @@ public class playerControler : MonoBehaviour {
 			Debug.Log ("jump");
 			rb2d.AddForce (new Vector2 (0.0f, upForce));
 		}
+
+		//animate
+		if (isGrounded (bc2d)) {
+			//walk
+			if (rb2d.velocity.x >= 0) {
+				currentSprite = playerWalkRight;
+			} else {
+				currentSprite = playerWalkLeft;
+			}
+		} else {
+			//jump
+			if (rb2d.velocity.x >= 0) {
+				currentSprite = playerJumpRight;
+			} else {
+				currentSprite = playerJumpLeft;
+			}
+		}
+
+		anim ();
 	}
 		
 
-	void anim(Sprite[] sprites){
+	void anim(){
 		//change sprites
 		aniCounter++;
 		Sprite temp = currentSprite [(aniCounter/10) % currentSprite.Length];

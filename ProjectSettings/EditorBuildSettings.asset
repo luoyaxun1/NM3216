@@ -7,17 +7,17 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/text.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/river.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/settings.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/market.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/home.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/cave.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/sunMinigame.unity
   - enabled: 1
     path: Assets/tutorial.unity
@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/Level2.unity
   - enabled: 1
     path: Assets/Level3.unity
+  - enabled: 1
+    path: Assets/tutorial2.unity

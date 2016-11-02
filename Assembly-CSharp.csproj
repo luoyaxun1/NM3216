@@ -52,10 +52,10 @@
      <Compile Include="Assets\scripts\cave.cs" />
      <Compile Include="Assets\scripts\dontDestory.cs" />
      <Compile Include="Assets\scripts\home\patchManager.cs" />
+     <Compile Include="Assets\scripts\loadScene.cs" />
      <Compile Include="Assets\scripts\loader.cs" />
      <Compile Include="Assets\scripts\movementController.cs" />
      <Compile Include="Assets\scripts\movingGround.cs" />
-     <Compile Include="Assets\scripts\movingGroundBlocker.cs" />
      <Compile Include="Assets\scripts\playerControler.cs" />
      <Compile Include="Assets\scripts\respawnGround.cs" />
      <Compile Include="Assets\scripts\respawnObject.cs" />
