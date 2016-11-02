@@ -6,6 +6,8 @@ public class CameraController : MonoBehaviour {
 	public GameManager gameManager;
 	public GameObject player;
 	public float cameraDisplacement;
+	public float cameraTop;
+	public float cameraBottom;
 
 
 	private Vector3 offset;

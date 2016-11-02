@@ -43,7 +43,6 @@ public class GameManager : MonoBehaviour {
 		}
 		//player settings
 		currLevel = 1;//hard code to 1
-		Rigidbody2D rb2d = player1.GetComponent<Rigidbody2D>();
 		//rb2d.gravityScale = 1.0f;
 	}
 
@@ -60,6 +59,8 @@ public class GameManager : MonoBehaviour {
 		Debug.Log ("added water");
 		water++;
 	}
+
+	public static void loadCave(){}
 
 	public static int GetWater(){
 		return water;
@@ -83,21 +84,6 @@ public class GameManager : MonoBehaviour {
 	}
 
 
-	public static void loadHome(){
-		SceneManager.LoadSceneAsync ("home", LoadSceneMode.Single);
-	}
-
-	public static void loadCave(){
-		SceneManager.LoadSceneAsync ("cave", LoadSceneMode.Single);
-	}
-
-	public static void loadMarket(){
-		SceneManager.LoadSceneAsync ("market", LoadSceneMode.Single);
-	}
-
-	public static void loadSunminigame(){
-		SceneManager.LoadSceneAsync ("sunMinigame", LoadSceneMode.Single);
-	}
 
 	//player accessors
 	public GameObject getPlayer(){

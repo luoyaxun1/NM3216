@@ -14,6 +14,8 @@ public class playerControler : MonoBehaviour {
 	//motion variables
 	public float speed;
 	public float upForce;
+	public float speedMax;
+	public float upMax;
 	public Sprite[] playerWalkLeft;
 	public Sprite[] playerWalkRight;
 	public Sprite[] playerJumpRight;
@@ -38,7 +40,7 @@ public class playerControler : MonoBehaviour {
 	// Update is called once per frame
 
 
-	void FixedUpdate () {
+	void FixedUpdate1 () {
 		//PrintStatus ();
 		float vertical = Input.GetAxis ("Vertical") * Time.deltaTime * 10;
 		float horizontal = Input.GetAxis ("Horizontal") * Time.deltaTime * 10;
@@ -71,6 +73,39 @@ public class playerControler : MonoBehaviour {
 		}
 		anim (currentSprite);
 	}
+
+	void FixedUpdate2 () {
+		Vector3 currpos = this.transform.position;
+		//Vector3 vec = Vector3.zero;
+		if (Input.GetKey (KeyCode.RightArrow)) {
+			rb2d.MovePosition (currpos + new Vector3 (speed, 0.0f, 0.0f));
+		}
+		if (Input.GetKey (KeyCode.LeftArrow)) {
+			rb2d.MovePosition (currpos + new Vector3 (-speed, 0.0f, 0.0f));
+		}
+
+		if (isGrounded (bc2d) && Input.GetKeyDown (KeyCode.UpArrow)) {
+			Debug.Log ("up pressed");
+			rb2d.AddForce (new Vector3 (0.0f, upForce, 0.0f));
+		}
+
+	}
+	void FixedUpdate () {
+		if (Input.GetKey (KeyCode.RightArrow) && rb2d.velocity.x <speedMax ) {
+			Debug.Log ("move right");
+			rb2d.AddForce (new Vector2 (speed, 0.0f));
+		}
+
+		if (Input.GetKey (KeyCode.LeftArrow) && rb2d.velocity.x > -1 * speedMax) {
+			Debug.Log ("move left");
+			rb2d.AddForce (new Vector2 (-speed, 0.0f));
+		}
+		if (isGrounded(bc2d) && Input.GetKey (KeyCode.UpArrow) && rb2d.velocity.y < upMax) {
+			Debug.Log ("jump");
+			rb2d.AddForce (new Vector2 (0.0f, upForce));
+		}
+	}
+		
 
 	void anim(Sprite[] sprites){
 		//change sprites
