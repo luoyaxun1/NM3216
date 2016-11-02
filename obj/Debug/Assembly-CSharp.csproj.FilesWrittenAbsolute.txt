@@ -1,0 +1,4 @@
+/Users/angelwong/Documents/NM3216 - /Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/angelwong/Documents/NM3216 - /Temp/bin/Debug/Assembly-CSharp.dll
+/Users/angelwong/Documents/NM3216 - /obj/Debug/Assembly-CSharp.dll
+/Users/angelwong/Documents/NM3216 - /obj/Debug/Assembly-CSharp.dll.mdb

@@ -75,7 +75,7 @@ public class SquirelTreeScript : MonoBehaviour {
 
 		//this function detects if a player trys to cut a tree
 		if (this.inRange && Input.GetKeyDown (KeyCode.Space) && !this.isCut) {
-			//Debug.Log ("pressed space");
+			//Debug.Log ("pressed uparrow");
 			//1. update cut count
 			this.hitCounter++;
 			this.sr.sprite = this.sprites [this.hitCounter];
