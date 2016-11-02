@@ -54,3 +54,4 @@ MonoBehaviour:
   player1: {fileID: 1000011565399474, guid: ba418abd196879a4cbc31a058e638263, type: 2}
   sunDrop: {fileID: 1000011942475538, guid: 050cd2db9d5503544a886be286ac288a, type: 2}
   canvas: {fileID: 1000013438625288, guid: 16bb472fbd8dd6841b76a04dec628c26, type: 2}
+  waterDrop: {fileID: 1000011012998450, guid: 8b26ac27661602449a17062c9b358b9a, type: 2}

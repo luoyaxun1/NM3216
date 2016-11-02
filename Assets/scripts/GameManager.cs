@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject player1;
 	public GameObject sunDrop;
 	public GameObject canvas;
+	public GameObject waterDrop;
 
 	private static int currLevel;
 	
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public static  void AddWater(){
+		Debug.Log ("added water");
 		water++;
 	}
 
@@ -117,6 +119,14 @@ public class GameManager : MonoBehaviour {
 		GameObject temp;
 		for (int i = 0; i < n; i++) {
 			temp = Instantiate (sunDrop);
+			temp.transform.position = location;
+		}
+	}
+
+	public void SpawnWaterDrops(Vector3 location, int n){
+		GameObject temp;
+		for (int i = 0; i < n; i++) {
+			temp = Instantiate (waterDrop);
 			temp.transform.position = location;
 		}
 	}
