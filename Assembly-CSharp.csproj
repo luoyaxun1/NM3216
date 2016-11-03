@@ -45,11 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\drawnDog.cs" />
      <Compile Include="Assets\scripts\CameraController.cs" />
      <Compile Include="Assets\scripts\CanvasScript.cs" />
      <Compile Include="Assets\scripts\GameManager.cs" />
      <Compile Include="Assets\scripts\Portal.cs" />
      <Compile Include="Assets\scripts\cave.cs" />
+     <Compile Include="Assets\scripts\dogDrawnTimer.cs" />
      <Compile Include="Assets\scripts\dontDestory.cs" />
      <Compile Include="Assets\scripts\home\patchManager.cs" />
      <Compile Include="Assets\scripts\loadScene.cs" />
