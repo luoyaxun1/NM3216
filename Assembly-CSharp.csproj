@@ -63,6 +63,7 @@
      <Compile Include="Assets\scripts\respawnObject.cs" />
      <Compile Include="Assets\scripts\seedGrowth.cs" />
      <Compile Include="Assets\scripts\sheep_controller.cs" />
+     <Compile Include="Assets\scripts\spaceNextScene.cs" />
      <Compile Include="Assets\scripts\sunMinigame\SquirelTreeScript.cs" />
      <Compile Include="Assets\scripts\sunMinigame\SunDrop.cs" />
      <Compile Include="Assets\scripts\sunMinigame\SunGameScript.cs" />

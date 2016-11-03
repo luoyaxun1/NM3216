@@ -342,7 +342,7 @@ Prefab:
     - target: {fileID: 114000012876955926, guid: eabd32c3388d0074f89c6b36ef37669f,
         type: 2}
       propertyPath: otherScene
-      value: Level3
+      value: updateGrowth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eabd32c3388d0074f89c6b36ef37669f, type: 2}

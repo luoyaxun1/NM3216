@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\dogDrawnTimer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\CameraController.cs">
     <Files>
       <File FileName="Assets\scripts\playerControler.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\sunMinigame\SunDrop.cs" Line="18" Column="4" />
+      <File FileName="Assets\scripts\CameraController.cs" Line="72" Column="88" />
+      <File FileName="Assets\scripts\sunMinigame\SunDrop.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\respawnGround.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\timerRock.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\waterDrop.cs" Line="1" Column="1" />
@@ -15,8 +15,9 @@
       <File FileName="Assets\scripts\movingGround.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\Portal.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\loadScene.cs" Line="1" Column="1" />
-      <File FileName="Assets\drawnDog.cs" Line="19" Column="16" />
+      <File FileName="Assets\drawnDog.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\dogDrawnTimer.cs" Line="17" Column="20" />
+      <File FileName="Assets\scripts\spaceNextScene.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

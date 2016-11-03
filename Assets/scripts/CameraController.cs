@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour {
 	public float cameraDisplacement;
 	public float cameraTop;
 	public float cameraBottom;
+	private Camera camera;
 
 
 	private Vector3 offset;
@@ -15,6 +16,7 @@ public class CameraController : MonoBehaviour {
 	void Start () {
 		//initialise offset from player position
 		//this.player = gameManager.getPlayer();
+
 		offset = new Vector3((float)0.0f , -player.transform.position.y + cameraDisplacement, (float)-10.0);
 
 		transform.position = this.player.transform.position + offset;
@@ -24,7 +26,7 @@ public class CameraController : MonoBehaviour {
 		float targetaspect = 16.0f / 9.0f;
 		float windowaspect = (float)Screen.width / (float)Screen.height;
 		float scaleheight = windowaspect / targetaspect;
-		Camera camera = GetComponent<Camera> ();
+		camera = GetComponent<Camera> ();
 		// if scaled height is less than current height, add letterbox
 		if (scaleheight < 1.0f)
 		{  
@@ -55,17 +57,24 @@ public class CameraController : MonoBehaviour {
 	// Late Update is called once per frame after Update
 	void LateUpdate () {
 		//PrintStatus ();
+		bool followY = camera.rect.yMax <= cameraTop && camera.rect.yMin >= cameraBottom;
 
-		if (this.player.transform.position.x > transform.position.x) {
+		if (this.player.transform.position.x > transform.position.x && followY) {
 			//player is moving forward and position is more than center
 			transform.position = this.player.transform.position + offset;
-		} else {
+		} else if (followY) {
 			//just follow y
 			float newY = this.player.transform.position.y + offset.y;
 			transform.position = new Vector3 (transform.position.x, newY, transform.position.z);
+		} else if (this.player.transform.position.x > transform.position.x) {
+			//just followx
+			float newX = this.player.transform.position.x + offset.x;
+			transform.position = new Vector3 (newX, transform.position.y, transform.position.z);
+		}else{
+			//do not follow
 		}
-	}
 
+	}
 	void PrintStatus(){
 		Debug.Log (transform.position);
 	}
