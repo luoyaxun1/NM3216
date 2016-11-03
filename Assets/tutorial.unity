@@ -737,7 +737,17 @@ Prefab:
     - target: {fileID: 114000012888652218, guid: ffd7f547ab662d648bc2a1af90a50f3c,
         type: 2}
       propertyPath: cameraDisplacement
-      value: -0.2
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012888652218, guid: ffd7f547ab662d648bc2a1af90a50f3c,
+        type: 2}
+      propertyPath: cameraTop
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012888652218, guid: ffd7f547ab662d648bc2a1af90a50f3c,
+        type: 2}
+      propertyPath: cameraBottom
+      value: -1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffd7f547ab662d648bc2a1af90a50f3c, type: 2}

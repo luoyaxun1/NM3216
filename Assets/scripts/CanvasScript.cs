@@ -4,13 +4,18 @@ using UnityEngine.UI;
 
 public class CanvasScript : MonoBehaviour {
 
-	public Text water;
-	public Text sunlight;
 	public GameManager gameManager;
+	public Image waterBar;
+	public Image sunLightBar;
+	public Image karmarBar;
+	public float totalWater;
+	public float totalSun;
+	public float totalKill;
 	
 	// Update is called once per frame
 	void Update () {
-		water.text = "Water: " + GameManager.GetWater ();
-		sunlight.text = "SunLight: " + GameManager.GetSunLight ();
+		waterBar.fillAmount = (float)GameManager.GetWater () / totalWater;
+		sunLightBar.fillAmount = (float)GameManager.GetSunLight ()/totalSun;
+		karmarBar.fillAmount = (float)GameManager.GetKillCount()/totalKill;
 	}
 }
