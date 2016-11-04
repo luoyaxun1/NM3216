@@ -22,6 +22,7 @@ public class playerControler : MonoBehaviour {
 	public Sprite[] playerJumpLeft;
 	private Sprite[] currentSprite;
 	private int aniCounter;
+	private AudioSource aSource;
 	//private GameObject ground;
 
 	private int groundedMeter = 0;//+1 -> grounded
@@ -31,6 +32,7 @@ public class playerControler : MonoBehaviour {
 		rb2d = this.GetComponent<Rigidbody2D> ();
 		sr = this.GetComponent<SpriteRenderer> ();
 		bc2d = this.GetComponent<BoxCollider2D> ();
+		aSource = this.GetComponent<AudioSource> ();
 		//ground = GameObject.FindWithTag ("ground");
 		//groundBc2d = ground.GetComponent<BoxCollider2D> ();
 		aniCounter = 0;
@@ -125,6 +127,8 @@ public class playerControler : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "ground") {
+			Debug.Log (coll.gameObject.tag);
+			aSource.Play ();
 			this.groundedMeter++;
 		}
 	}

@@ -25,7 +25,7 @@ GameObject:
   - 61: {fileID: 61000013081567154}
   m_Layer: 0
   m_Name: drowningDog
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec624c78a9c1354c895914556f12d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 2.5
+  delay: 1.25
 --- !u!212 &212000012661663212
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -53,6 +53,7 @@
      <Compile Include="Assets\scripts\cave.cs" />
      <Compile Include="Assets\scripts\dogDrawnTimer.cs" />
      <Compile Include="Assets\scripts\dontDestory.cs" />
+     <Compile Include="Assets\scripts\helpScript.cs" />
      <Compile Include="Assets\scripts\home\patchManager.cs" />
      <Compile Include="Assets\scripts\loadScene.cs" />
      <Compile Include="Assets\scripts\loader.cs" />

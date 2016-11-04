@@ -53,7 +53,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 5
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -88,6 +88,7 @@ MonoBehaviour:
   gameManager: {fileID: 114000012083963958, guid: 1720bc8ab397be64e8df55cce19aa4df,
     type: 2}
   size: 1
+  waitTime: 2
 --- !u!212 &212000011045503856
 SpriteRenderer:
   m_ObjectHideFlags: 1

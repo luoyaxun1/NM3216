@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject sunDrop;
 	public GameObject canvas;
 	public GameObject waterDrop;
+	public GameObject helpScreen;
 
 	private static int currLevel;
 	
@@ -38,8 +39,10 @@ public class GameManager : MonoBehaviour {
 		if (canvas == null) {
 			Instantiate (canvas);
 			Debug.Log ("instantiate canvas");
-		} else {
-			//set canvas to itself
+		} 
+		if (GameObject.FindWithTag ("HelpScreen") == null) {
+			this.helpScreen = Instantiate (helpScreen);
+			//Debug.Log ("instantiate help screen");
 		}
 		//player settings
 		currLevel = 1;//hard code to 1

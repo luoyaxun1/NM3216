@@ -5,8 +5,8 @@ public class SquirelTreeScript : MonoBehaviour {
 	//trees need sprite renderer, box collider 2d
 	//public SunGameScript sungameObject;
 	public GameManager gameManager;
-
-	private int currLevel;
+	public bool isSquirelTree;
+	//private int currLevel;
 	private float sTreeChance;
 	private bool isStree;
 	private bool isCut;
@@ -28,9 +28,9 @@ public class SquirelTreeScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//start is called before any updates, but after awake
-		this.currLevel = GameManager.GetLevel();
-		this.sTreeChance = this.currLevel * 0.3f; //0.3 for lvl1, 0.6 for lvl 2, 0.9 for lvl3
-		this.isStree = Random.value <= this.sTreeChance;//if smaller than chance, then set as sTree
+		//this.currLevel = GameManager.GetLevel();
+		//this.sTreeChance = this.currLevel * 0.3f; //0.3 for lvl1, 0.6 for lvl 2, 0.9 for lvl3
+		this.isStree =  isSquirelTree;
 		this.isCut = false;//init as not cut
 
 		this.sr = this.GetComponent<SpriteRenderer> ();

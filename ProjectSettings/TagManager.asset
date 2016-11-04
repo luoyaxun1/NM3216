@@ -9,6 +9,9 @@ TagManager:
   - wizard
   - ground
   - cameraCanvas
+  - Canvas
+  - object
+  - HelpScreen
   layers:
   - Default
   - TransparentFX

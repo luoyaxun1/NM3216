@@ -57,8 +57,9 @@ public class CameraController : MonoBehaviour {
 	// Late Update is called once per frame after Update
 	void LateUpdate () {
 		//PrintStatus ();
-		bool followY = cam.rect.yMax <= cameraTop && cam.rect.yMin >= cameraBottom;
 
+		bool followY = ((cam.orthographicSize + this.player.transform.position.y + offset.y) <= cameraTop && (cam.orthographicSize + this.player.transform.position.y + offset.y)  >= cameraBottom);
+		Debug.Log(followY);
 		if (this.player.transform.position.x > transform.position.x && followY) {
 			//player is moving forward and position is more than center
 			transform.position = this.player.transform.position + offset;
@@ -76,6 +77,7 @@ public class CameraController : MonoBehaviour {
 
 	}
 	void PrintStatus(){
-		Debug.Log (transform.position);
+		//Debug.Log (transform.position);
+		Debug.Log ( "yMax"+ (cam.orthographicSize + cam.transform.position.y));
 	}
 }

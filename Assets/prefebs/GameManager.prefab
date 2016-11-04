@@ -22,7 +22,7 @@ GameObject:
   - 114: {fileID: 114000012083963958}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,3 +55,4 @@ MonoBehaviour:
   sunDrop: {fileID: 1000011942475538, guid: 050cd2db9d5503544a886be286ac288a, type: 2}
   canvas: {fileID: 1000013438625288, guid: 16bb472fbd8dd6841b76a04dec628c26, type: 2}
   waterDrop: {fileID: 1000011012998450, guid: 8b26ac27661602449a17062c9b358b9a, type: 2}
+  helpScreen: {fileID: 1000013003934352, guid: c1108b768c5ccc844b94a7b320505980, type: 2}
