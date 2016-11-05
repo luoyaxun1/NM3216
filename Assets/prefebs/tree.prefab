@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012496784324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.71, y: -0.37, z: 10}
+  m_LocalPosition: {x: -31.42, y: 1.57, z: 10}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -53,9 +53,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.02}
+  m_Offset: {x: 0, y: -0.14}
   serializedVersion: 2
-  m_Size: {x: 0.08, y: 1}
+  m_Size: {x: 0.15, y: 0.52}
 --- !u!114 &114000013529912146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -69,6 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 114000012083963958, guid: 1720bc8ab397be64e8df55cce19aa4df,
     type: 2}
+  isSquirelTree: 0
   treeSprite:
   - {fileID: 21300000, guid: be031a7dbc2d6e74f8d8cae39aa297bb, type: 3}
   - {fileID: 21300000, guid: 6f4565f59b06b2747ae756428804c6d2, type: 3}
