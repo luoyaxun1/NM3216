@@ -248,7 +248,7 @@ Prefab:
     - target: {fileID: 114000012876955926, guid: eabd32c3388d0074f89c6b36ef37669f,
         type: 2}
       propertyPath: otherScene
-      value: newLevel1
+      value: angel's Level1
       objectReference: {fileID: 0}
     - target: {fileID: 61000012690159668, guid: eabd32c3388d0074f89c6b36ef37669f,
         type: 2}
