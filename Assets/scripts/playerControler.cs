@@ -23,6 +23,7 @@ public class playerControler : MonoBehaviour {
 	private Sprite[] currentSprite;
 	private int aniCounter;
 	private AudioSource aSource;
+	private bool canMove;
 	//private GameObject ground;
 
 	private int groundedMeter = 0;//+1 -> grounded
@@ -37,6 +38,7 @@ public class playerControler : MonoBehaviour {
 		//groundBc2d = ground.GetComponent<BoxCollider2D> ();
 		aniCounter = 0;
 		currentSprite = playerWalkRight;
+		canMove = true;
 	}
 
 	// Update is called once per frame
@@ -78,38 +80,40 @@ public class playerControler : MonoBehaviour {
 
 
 	void FixedUpdate () {
-		if (Input.GetKey (KeyCode.RightArrow) && rb2d.velocity.x <speedMax ) {
-			Debug.Log ("move right");
-			rb2d.AddForce (new Vector2 (speed, 0.0f));
-		}
-
-		if (Input.GetKey (KeyCode.LeftArrow) && rb2d.velocity.x > -1 * speedMax) {
-			Debug.Log ("move left");
-			rb2d.AddForce (new Vector2 (-speed, 0.0f));
-		}
-		if (isGrounded(bc2d) && Input.GetKey (KeyCode.UpArrow) && rb2d.velocity.y < upMax) {
-			Debug.Log ("jump");
-			rb2d.AddForce (new Vector2 (0.0f, upForce));
-		}
-
-		//animate
-		if (isGrounded (bc2d)) {
-			//walk
-			if (rb2d.velocity.x >= 0) {
-				currentSprite = playerWalkRight;
-			} else {
-				currentSprite = playerWalkLeft;
+		if (canMove) {
+			if (Input.GetKey (KeyCode.RightArrow) && rb2d.velocity.x < speedMax) {
+				Debug.Log ("move right");
+				rb2d.AddForce (new Vector2 (speed, 0.0f));
 			}
-		} else {
-			//jump
-			if (rb2d.velocity.x >= 0) {
-				currentSprite = playerJumpRight;
-			} else {
-				currentSprite = playerJumpLeft;
-			}
-		}
 
-		anim ();
+			if (Input.GetKey (KeyCode.LeftArrow) && rb2d.velocity.x > -1 * speedMax) {
+				Debug.Log ("move left");
+				rb2d.AddForce (new Vector2 (-speed, 0.0f));
+			}
+			if (isGrounded (bc2d) && Input.GetKey (KeyCode.UpArrow) && rb2d.velocity.y < upMax) {
+				Debug.Log ("jump");
+				rb2d.AddForce (new Vector2 (0.0f, upForce));
+			}
+
+			//animate
+			if (isGrounded (bc2d)) {
+				//walk
+				if (rb2d.velocity.x >= 0) {
+					currentSprite = playerWalkRight;
+				} else {
+					currentSprite = playerWalkLeft;
+				}
+			} else {
+				//jump
+				if (rb2d.velocity.x >= 0) {
+					currentSprite = playerJumpRight;
+				} else {
+					currentSprite = playerJumpLeft;
+				}
+			}
+
+			anim ();
+		}
 	}
 		
 
@@ -146,5 +150,13 @@ public class playerControler : MonoBehaviour {
 	void PrintStatus(){
 		Debug.Log (rb2d.velocity);
 		Debug.Log (transform.position);
+	}
+
+	public void Pause(){
+		this.canMove = false;
+	}
+
+	public void Continue(){
+		this.canMove = true;
 	}
 }

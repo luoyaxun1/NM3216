@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 		//init values
 		if (GameObject.FindWithTag ("Player") == null) {
 			//this.player1 = Instantiate (player1);
-			//player1.transform.position = new Vector3 (0.0f, 0.0f, 0.0f);//player load position
+			player1.transform.position = new Vector3 (0.0f, 0.0f, 0.0f);//player load position
 			//Debug.Log ("instantiateplayer");
 		} else {
 			this.player1 = GameObject.FindWithTag ("Player");

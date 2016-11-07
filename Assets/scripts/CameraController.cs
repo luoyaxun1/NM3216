@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour {
 	public float cameraDisplacement;
 	public float cameraTop;
 	public float cameraBottom;
+	public float groundLevel;
 	private Camera cam;
 
 
@@ -19,7 +20,7 @@ public class CameraController : MonoBehaviour {
 
 		offset = new Vector3((float)0.0f , -player.transform.position.y + cameraDisplacement, (float)-10.0);
 
-		transform.position = this.player.transform.position + offset;
+		transform.position = this.player.transform.position + offset + new Vector3(0.0f, groundLevel, 0.0f);
 
 
 		//fix aspect ratio
@@ -56,9 +57,9 @@ public class CameraController : MonoBehaviour {
 	
 	// Late Update is called once per frame after Update
 	void LateUpdate () {
-		//PrintStatus ();
+		PrintStatus ();
 
-		bool followY = ((cam.orthographicSize + this.player.transform.position.y + offset.y) <= cameraTop && (cam.orthographicSize + this.player.transform.position.y + offset.y)  >= cameraBottom);
+		bool followY = ((cam.orthographicSize + this.player.transform.position.y + offset.y) <= cameraTop && ((-1)*cam.orthographicSize + this.player.transform.position.y + offset.y)  >= cameraBottom);
 		Debug.Log(followY);
 		if (this.player.transform.position.x > transform.position.x && followY) {
 			//player is moving forward and position is more than center
