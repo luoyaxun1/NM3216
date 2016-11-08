@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/text.unity
   - enabled: 0
     path: Assets/river.unity
@@ -25,7 +25,7 @@ EditorBuildSettings:
     path: Assets/newLevel1.unity
   - enabled: 0
     path: Assets/Level2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Level3.unity
   - enabled: 1
     path: Assets/updateGrowth.unity
@@ -41,3 +41,9 @@ EditorBuildSettings:
     path: Assets/updateGrowth2.unity
   - enabled: 1
     path: Assets/angel's Level 3.unity
+  - enabled: 1
+    path: Assets/startstorytransition.unity
+  - enabled: 1
+    path: Assets/goodEnd.unity
+  - enabled: 1
+    path: Assets/badEnd.unity

@@ -1375,6 +1375,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -1906,6 +1911,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -2574,6 +2584,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -2734,6 +2749,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -2950,6 +2970,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -3009,6 +3034,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -3266,6 +3296,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -3330,6 +3365,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -3409,6 +3449,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -4125,6 +4170,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -4189,6 +4239,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -4755,6 +4810,11 @@ Prefab:
       propertyPath: otherScene
       value: end
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012876955926, guid: eabd32c3388d0074f89c6b36ef37669f,
+        type: 2}
+      propertyPath: nextSeedGrowth
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eabd32c3388d0074f89c6b36ef37669f, type: 2}
   m_IsPrefabParent: 0
@@ -4955,7 +5015,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000012425616748, guid: ba418abd196879a4cbc31a058e638263, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 66.05
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 4000012425616748, guid: ba418abd196879a4cbc31a058e638263, type: 2}
       propertyPath: m_LocalPosition.y
@@ -5028,6 +5088,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba418abd196879a4cbc31a058e638263, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1803296316 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010369850758, guid: ba418abd196879a4cbc31a058e638263,
+    type: 2}
+  m_PrefabInternal: {fileID: 1803296315}
+  m_Script: {fileID: 11500000, guid: 4ddecfa35422d0f4a9371fc701624c17, type: 3}
 --- !u!1001 &1809302768
 Prefab:
   m_ObjectHideFlags: 0
@@ -5084,6 +5150,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0
@@ -5483,6 +5554,11 @@ Prefab:
       propertyPath: m_Name
       value: timerRock (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010262892186, guid: 13c293f7e2f4780488d3aa9aabb20634,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1803296316}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 13c293f7e2f4780488d3aa9aabb20634, type: 2}
   m_IsPrefabParent: 0

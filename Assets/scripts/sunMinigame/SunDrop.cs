@@ -33,6 +33,8 @@ public class SunDrop : MonoBehaviour {
 			Debug.Log ("player caught sundrop");
 			GameManager.AddSunlight ();
 			this.gameObject.SetActive (false);
+		} else if (coll.gameObject.CompareTag ("MainCamera")) {
+			this.gameObject.SetActive (false);
 		}
 	}
 }

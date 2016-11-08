@@ -82,16 +82,16 @@ public class playerControler : MonoBehaviour {
 	void FixedUpdate () {
 		if (canMove) {
 			if (Input.GetKey (KeyCode.RightArrow) && rb2d.velocity.x < speedMax) {
-				Debug.Log ("move right");
+				//Debug.Log ("move right");
 				rb2d.AddForce (new Vector2 (speed, 0.0f));
 			}
 
 			if (Input.GetKey (KeyCode.LeftArrow) && rb2d.velocity.x > -1 * speedMax) {
-				Debug.Log ("move left");
+				//Debug.Log ("move left");
 				rb2d.AddForce (new Vector2 (-speed, 0.0f));
 			}
 			if (isGrounded (bc2d) && Input.GetKey (KeyCode.UpArrow) && rb2d.velocity.y < upMax) {
-				Debug.Log ("jump");
+				//Debug.Log ("jump");
 				rb2d.AddForce (new Vector2 (0.0f, upForce));
 			}
 

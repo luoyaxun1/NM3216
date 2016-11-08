@@ -41,6 +41,9 @@ GameObject:
   - 95: {fileID: 95000014173029992}
   - 114: {fileID: 114000010369850758}
   - 82: {fileID: 82000010066515398}
+  - 58: {fileID: 58000014038971544}
+  - 58: {fileID: 58000012532927594}
+  - 58: {fileID: 58000011778807112}
   m_Layer: 0
   m_Name: player1
   m_TagString: Player
@@ -68,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011565399474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -67.74, y: -0.26, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -92,20 +95,62 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61000011286434170
-BoxCollider2D:
+--- !u!58 &58000011778807112
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011565399474}
   m_Enabled: 1
   m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.4}
+  serializedVersion: 2
+  m_Radius: 0.17
+--- !u!58 &58000012532927594
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011565399474}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.59}
+  serializedVersion: 2
+  m_Radius: 0.09
+--- !u!58 &58000014038971544
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011565399474}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.43}
+  serializedVersion: 2
+  m_Radius: 0.1
+--- !u!61 &61000011286434170
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011565399474}
+  m_Enabled: 0
+  m_Density: 1
   m_Material: {fileID: 6200000, guid: aaaca10704276cb4d9f599a0700570e0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.36}
+  m_Offset: {x: 0, y: -0.61}
   serializedVersion: 2
-  m_Size: {x: 0.25, y: 0.73}
+  m_Size: {x: 0.15, y: 0.06}
 --- !u!61 &61000014260401998
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -117,9 +162,9 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: aaaca10704276cb4d9f599a0700570e0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0.12}
+  m_Offset: {x: 0, y: -0.14}
   serializedVersion: 2
-  m_Size: {x: 0.54, y: 1.3}
+  m_Size: {x: 1.03, y: 1.59}
 --- !u!82 &82000010066515398
 AudioSource:
   m_ObjectHideFlags: 1
@@ -129,7 +174,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f9e3ddd7fe8396245a276c4cb3ad79bc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e84c37e5161ed2c418675a02975804ec, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -222,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ddecfa35422d0f4a9371fc701624c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 100
   upForce: 600
   speedMax: 5
   upMax: 10

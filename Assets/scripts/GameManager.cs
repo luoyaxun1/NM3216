@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject waterDrop;
 	public GameObject helpScreen;
 
+	//public static int totalPossibleKill = 100;
+	//public static int totalPossibleItems = 100;
+
 	private static int currLevel;
 	
 	private static int killCount = 0;
@@ -38,17 +41,24 @@ public class GameManager : MonoBehaviour {
 		}
 		if (canvas == null) {
 			Instantiate (canvas);
-			Debug.Log ("instantiate canvas");
+			//Debug.Log ("instantiate canvas");
 		} 
 		if (GameObject.FindWithTag ("HelpScreen") == null) {
 			this.helpScreen = Instantiate (helpScreen);
 			//Debug.Log ("instantiate help screen");
 		}
 		//player settings
-		currLevel = 1;//hard code to 1
+		currLevel = 0;//hard code to 1
 		//rb2d.gravityScale = 1.0f;
 	}
 
+	public static void SetLevel(int l){
+		currLevel = l;
+	}
+
+	public static int GetLevel(){
+		return currLevel;
+	}
 
 	public static int GetKillCount(){
 		return killCount;
@@ -82,8 +92,12 @@ public class GameManager : MonoBehaviour {
 		return seedGrowth;
 	}
 
-	public static void AddSeedGrowth(){
-		seedGrowth++;
+	//public static void AddSeedGrowth(){
+	//	seedGrowth++;
+	//}
+
+	public static void SetSeedGrowth(int i){
+		seedGrowth = i;
 	}
 
 
@@ -98,9 +112,10 @@ public class GameManager : MonoBehaviour {
 		
 	}
 
-	//level accessor
-	public static int GetLevel(){
-		return currLevel;
+
+
+	public static bool IsGoodPlant(){
+		return sunlight >=110 && water >=90 && killCount <4;
 	}
 
 	//spawn sundrops at a specific location

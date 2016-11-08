@@ -42,7 +42,7 @@ public class patchManager : MonoBehaviour {
 		if (Input.GetKeyDown ("space") && seedStage < growingPatch.Length) {
 			//if space is pressed
 
-			GameManager.AddSeedGrowth ();
+			GameManager.SetSeedGrowth (1);
 			seedStage =  GameManager.GetSeedGrowth ();
 			print (seedStage);
 			sr.sprite = growingPatch [seedStage];

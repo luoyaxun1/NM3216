@@ -19,7 +19,9 @@ public class respawnGround : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "Player") {
 			Debug.Log ("player to respawn");
-			aSource.Play ();
+			if (GameManager.GetLevel () == 2) {
+				aSource.Play ();
+			}
 			coll.gameObject.transform.position = respawnPoint;
 			cameraObject.transform.position = new Vector3( coll.gameObject.transform.position.x, 
 				coll.gameObject.transform.position.y, cameraObject.transform.position.z);

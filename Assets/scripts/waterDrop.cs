@@ -29,6 +29,8 @@ public class waterDrop : MonoBehaviour {
 			Debug.Log ("player caught waterdrop");
 			GameManager.AddWater();
 			this.gameObject.SetActive (false);
+		}else if (coll.gameObject.CompareTag ("MainCamera")) {
+			this.gameObject.SetActive (false);
 		}
 	}
 }
