@@ -42,7 +42,7 @@ GameObject:
   - 114: {fileID: 114000010890939940}
   m_Layer: 5
   m_Name: helpScreen
-  m_TagString: Untagged
+  m_TagString: HelpScreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

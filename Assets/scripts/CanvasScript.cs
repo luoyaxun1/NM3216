@@ -14,6 +14,9 @@ public class CanvasScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		totalSun = 150;
+		totalWater = 120;
+		totalKill = 12;
 		waterBar.fillAmount = (float)GameManager.GetWater () / totalWater;
 		sunLightBar.fillAmount = (float)GameManager.GetSunLight ()/totalSun;
 		karmarBar.fillAmount = (float)GameManager.GetKillCount()/totalKill;
