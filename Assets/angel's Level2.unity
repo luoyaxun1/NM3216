@@ -293,6 +293,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012032645584, guid: fd14fce667333044091ac08bccf2c197,
+        type: 2}
+      propertyPath: p
+      value: 
+      objectReference: {fileID: 1935398895}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd14fce667333044091ac08bccf2c197, type: 2}
   m_IsPrefabParent: 0
@@ -4453,6 +4458,11 @@ Prefab:
       propertyPath: m_Name
       value: drowningDog (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012032645584, guid: fd14fce667333044091ac08bccf2c197,
+        type: 2}
+      propertyPath: p
+      value: 
+      objectReference: {fileID: 1935398895}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fd14fce667333044091ac08bccf2c197, type: 2}
   m_IsPrefabParent: 0
@@ -4968,6 +4978,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 0.42
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011927042958, guid: f6ba01500ad9aab45bed198e9c34d87f,
+        type: 2}
+      propertyPath: p
+      value: 
+      objectReference: {fileID: 1935398895}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f6ba01500ad9aab45bed198e9c34d87f, type: 2}
   m_IsPrefabParent: 0

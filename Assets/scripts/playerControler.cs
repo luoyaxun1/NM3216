@@ -159,4 +159,8 @@ public class playerControler : MonoBehaviour {
 	public void Continue(){
 		this.canMove = true;
 	}
+
+	public void ResetGround(){
+		this.groundedMeter = 0;
+	}
 }

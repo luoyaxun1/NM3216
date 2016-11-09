@@ -5,6 +5,7 @@ public class respawnGround : MonoBehaviour {
 
 	public GameObject spawnPoint;
 	public GameObject cameraObject;
+	public playerControler p;
 	private BoxCollider2D bc2d;
 	private static Vector3 respawnPoint;
 	private AudioSource aSource;
@@ -22,9 +23,11 @@ public class respawnGround : MonoBehaviour {
 			if (GameManager.GetLevel () == 2) {
 				aSource.Play ();
 			}
+
 			coll.gameObject.transform.position = respawnPoint;
 			cameraObject.transform.position = new Vector3( coll.gameObject.transform.position.x, 
 				coll.gameObject.transform.position.y, cameraObject.transform.position.z);
+			p.ResetGround ();
 		}
 	}
 

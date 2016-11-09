@@ -119,7 +119,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public static bool IsDryPlant(){
-		return sunlight < 95 || water < 95;
+		return (sunlight < 95 || water < 95) && killCount < 2;
 	}
 
 	//spawn sundrops at a specific location

@@ -4,6 +4,7 @@ using System.Collections;
 public class dogDrawnTimer : MonoBehaviour {
 	public float delay;
 	private Animator ani;
+	public playerControler p;
 	//private bool isSteppedOn = false;
 	// Use this for initialization
 
@@ -18,6 +19,7 @@ public class dogDrawnTimer : MonoBehaviour {
 			//set trigger
 			ani.SetTrigger("drown");
 			//make dog drown
+
 			Invoke ("DeactivateObject", delay);
 		}
 	}
@@ -25,6 +27,8 @@ public class dogDrawnTimer : MonoBehaviour {
 
 
 	void DeactivateObject(){
+		
 		this.gameObject.SetActive (false);
+		//p.ExitGround ();
 	}
 }

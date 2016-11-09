@@ -2846,7 +2846,7 @@ Prefab:
     - target: {fileID: 114000013307054014, guid: d82fad52a850e1c41bd798f2e8b09c1a,
         type: 2}
       propertyPath: cameraDisplacement
-      value: 0
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 20000010719802136, guid: d82fad52a850e1c41bd798f2e8b09c1a,
         type: 2}
@@ -2896,7 +2896,7 @@ Prefab:
     - target: {fileID: 114000013307054014, guid: d82fad52a850e1c41bd798f2e8b09c1a,
         type: 2}
       propertyPath: groundLevel
-      value: 9
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 82000012446007574, guid: d82fad52a850e1c41bd798f2e8b09c1a,
         type: 2}
