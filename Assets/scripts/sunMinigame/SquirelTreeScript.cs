@@ -14,7 +14,8 @@ public class SquirelTreeScript : MonoBehaviour {
 	private BoxCollider2D bc;
 	private int hitCounter;//how many times current tree has been hit
 	private int MAXCUT = 4;
-	private AudioSource aS;
+	public AudioSource chopWood;
+	public AudioSource squirelSound;
 
 	public Sprite[] treeSprite;//how tree looks when cut down
 	public Sprite[] sTreeSprite;
@@ -37,7 +38,6 @@ public class SquirelTreeScript : MonoBehaviour {
 		this.sr = this.GetComponent<SpriteRenderer> ();
 		this.bc = this.GetComponent<BoxCollider2D> ();
 		this.hitCounter = 0;
-		this.aS = GetComponent<AudioSource> ();
 
 		//Debug.Log (isStree);
 		//set differences between trees
@@ -80,12 +80,13 @@ public class SquirelTreeScript : MonoBehaviour {
 			//Debug.Log ("pressed space");
 			//1. update cut count
 			this.hitCounter++;
-			this.aS.Play ();
+			this.chopWood.Play ();
 			this.sr.sprite = this.sprites [this.hitCounter];
 			if (this.hitCounter == MAXCUT) {
 				this.isCut = true;
 				//Debug.Log ("tree is cut");
 				if(this.isStree){
+					this.squirelSound.Play ();
 					GameManager.AddKill ();
 				}
 				//spawn sun drops

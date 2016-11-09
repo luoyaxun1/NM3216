@@ -23,14 +23,14 @@ public class SunDrop : MonoBehaviour {
 	}
 
 	private IEnumerator ActivatationRoutine(){
-		Debug.Log ("waiting for" + waitTime);
+		//Debug.Log ("waiting for" + waitTime);
 		yield return new WaitForSeconds (waitTime);
 		//cc2d.isTrigger = true;
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (canCatch && coll.gameObject.tag == "Player") {
-			Debug.Log ("player caught sundrop");
+			//Debug.Log ("player caught sundrop");
 			GameManager.AddSunlight ();
 			this.gameObject.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("MainCamera")) {

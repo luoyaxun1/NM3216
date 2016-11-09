@@ -97,15 +97,15 @@ public class playerControler : MonoBehaviour {
 
 			//animate
 			if (isGrounded (bc2d)) {
-				//walk
-				if (rb2d.velocity.x >= 0) {
+				Debug.Log (rb2d.velocity.x);
+				if (rb2d.velocity.x >= -0.00001) {
 					currentSprite = playerWalkRight;
 				} else {
 					currentSprite = playerWalkLeft;
 				}
 			} else {
 				//jump
-				if (rb2d.velocity.x >= 0) {
+				if (rb2d.velocity.x >= -0.00001) {
 					currentSprite = playerJumpRight;
 				} else {
 					currentSprite = playerJumpLeft;
@@ -131,7 +131,7 @@ public class playerControler : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll){
 		if (coll.gameObject.tag == "ground") {
-			Debug.Log (coll.gameObject.tag);
+			//Debug.Log (coll.gameObject.tag);
 			aSource.Play ();
 			this.groundedMeter++;
 		}

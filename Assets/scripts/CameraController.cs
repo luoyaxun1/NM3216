@@ -19,8 +19,9 @@ public class CameraController : MonoBehaviour {
 		//this.player = gameManager.getPlayer();
 
 		offset = new Vector3((float)0.0f , -player.transform.position.y + cameraDisplacement, (float)-10.0);
-
-		transform.position = this.player.transform.position + offset + new Vector3(0.0f, groundLevel, 0.0f);
+		if (GameManager.GetLevel () == 1) {
+			transform.position = this.player.transform.position + offset + new Vector3 (0.0f, groundLevel, 0.0f);
+		}
 
 
 		//fix aspect ratio

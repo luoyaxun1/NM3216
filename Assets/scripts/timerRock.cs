@@ -11,21 +11,21 @@ public class timerRock : MonoBehaviour {
 	private int stages;
 	private float standTime;
 	private SpriteRenderer sr;
-	private BoxCollider2D bc2d;
+	private bool entered = false;
 	// Use this for initialization
 	void Start () {
 		stages = 1;
 		maxStages = sprites.Length;
 		standTime = 0.0f;
 		sr = GetComponent<SpriteRenderer> ();
-		bc2d = GetComponent<BoxCollider2D> ();
 		sr.sprite = sprites [0];
 		//Debug.Log (maxStages);
 	}
 
 	void Update(){
-		//Debug.Log (standTime);
-		if (bc2d.IsTouching (player.GetComponent<BoxCollider2D> ())) {
+		
+		if (entered) {
+			
 			standTime += Time.deltaTime;
 		
 			if (stages == maxStages) {
@@ -41,19 +41,17 @@ public class timerRock : MonoBehaviour {
 		}
 
 	}
-	
-	/*void OnCollisionStay2D(Collision2D coll) {
-		Debug.Log (standTime);
-		if (coll.gameObject.tag == "Player") {
-			//if tag == maxStages
-			if (stages == maxStages) {
-				//no more rocks
-				this.gameObject.SetActive(false);
-			} else if(standTime > time) {
-				standTime = 0.0f;//reset
-				sr.sprite = sprites[stages - 1];
-				stages++;
-			}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if (coll.gameObject.CompareTag ("Player")) {
+			Debug.Log ("timer rock");
+			entered = true;
 		}
-	}*/
+	}
+
+	void OnCollisionExit2D(Collision2D coll){
+		if (coll.gameObject.CompareTag ("Player")) {
+			entered = false;
+		}
+	}
 }

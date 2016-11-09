@@ -241,9 +241,9 @@ MonoBehaviour:
     type: 2}
   player: {fileID: 0}
   cameraDisplacement: 0
-  cameraTop: 7
-  cameraBottom: -2
-  groundLevel: 1
+  cameraTop: 0
+  cameraBottom: 0
+  groundLevel: 0
 --- !u!124 &124000013988265012
 Behaviour:
   m_ObjectHideFlags: 1
