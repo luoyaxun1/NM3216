@@ -86,6 +86,7 @@
      <None Include="Assets\sprites\text\instructions.txt" />
      <None Include="Assets\textItems\wizardText2Bad.txt" />
      <None Include="Assets\textItems\goodEndText.txt" />
+     <None Include="Assets\textItems\darkEndText.txt" />
      <None Include="Assets\textItems\wizardText2Good.txt" />
      <None Include="Assets\textItems\badEndText.txt" />
      <None Include="Assets\sprites\text\portalIndex.txt" />
