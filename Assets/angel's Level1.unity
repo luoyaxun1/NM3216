@@ -7313,7 +7313,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010309002432, guid: d82fad52a850e1c41bd798f2e8b09c1a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.4
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 4000010309002432, guid: d82fad52a850e1c41bd798f2e8b09c1a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7367,6 +7367,16 @@ Prefab:
         type: 2}
       propertyPath: m_Volume
       value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013307054014, guid: d82fad52a850e1c41bd798f2e8b09c1a,
+        type: 2}
+      propertyPath: cameraTop
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013307054014, guid: d82fad52a850e1c41bd798f2e8b09c1a,
+        type: 2}
+      propertyPath: cameraBottom
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d82fad52a850e1c41bd798f2e8b09c1a, type: 2}
